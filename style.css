@@ -114,6 +114,31 @@ a {
   border-radius: 8px;
 }
 
+.internship-info {
+  max-width: 620px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.internship-info p {
+  color: var(--muted);
+  margin: 0;
+}
+
+.internship-label {
+  display: inline-block;
+  color: var(--accent-dark);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.4rem;
+}
+
 .small-title {
   color: var(--accent-dark);
   font-size: 0.85rem;
@@ -158,6 +183,17 @@ h3 {
   background: var(--accent-dark);
 }
 
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.hero-buttons .button {
+  width: 190px;
+  text-align: center;
+}
+
 /* Sektioner */
 
 .section {
@@ -184,6 +220,7 @@ h3 {
   border: 1px solid var(--line);
   border-radius: 8px;
   padding: 2rem;
+  align-self: start;
 }
 
 .skill-list {
@@ -253,6 +290,21 @@ h3 {
 }
 
 .project-link:hover {
+  text-decoration: underline;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.project-links a {
+  color: var(--accent-dark);
+  font-weight: 600;
+}
+
+.project-links a:hover {
   text-decoration: underline;
 }
 
