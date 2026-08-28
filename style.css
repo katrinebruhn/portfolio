@@ -350,6 +350,33 @@ h3 {
   font-size: 0.9rem;
 }
 
+#scrollTopBtn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+
+  width: 46px;
+  height: 46px;
+
+  border: 1px solid var(--line);
+  border-radius: 8px;
+
+  background: #aaa5a0;
+  color: white;
+
+  font-size: 1.4rem;
+  cursor: pointer;
+
+  display: none;
+  z-index: 1000;
+
+  transition: background 0.2s ease;
+}
+
+#scrollTopBtn:hover {
+  background: #8f8a85;
+}
+
 /* Mobil */
 
 @media (max-width: 768px) {
