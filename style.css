@@ -4,8 +4,8 @@
   --text: #191716;
   --muted: #706a64;
   --line: #ded6cc;
-  --accent: #b76646;
-  --accent-dark: #7d3f2b;
+  --accent: #a65f45;
+  --accent-dark: #754231;
 }
 
 * {
@@ -109,6 +109,7 @@ a {
 .hero-image img {
   width: 100%;
   max-width: 380px;
+  margin-bottom: 2rem;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 8px;
@@ -116,27 +117,27 @@ a {
 
 .internship-info {
   max-width: 620px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-left: 4px solid var(--accent);
-  border-radius: 6px;
-  padding: 1rem 1.2rem;
   margin-bottom: 2rem;
-}
-
-.internship-info p {
-  color: var(--muted);
-  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: none;
 }
 
 .internship-label {
-  display: inline-block;
+  display: block;
   color: var(--accent-dark);
   font-size: 0.8rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
   margin-bottom: 0.4rem;
+}
+
+.internship-info p {
+  color: var(--muted);
+  margin: 0;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid var(--line);
 }
 
 .small-title {
