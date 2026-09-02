@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <meta
       name="description"
       content="Katrine Bruhns portfolio - multimediedesignstuderende med interesse for frontend."
     />
-    <title>Katrine Bruhn | Portfolio</title>
+
+    <title>Katrine Bruhn Portfolio</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -18,6 +21,7 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container nav">
@@ -28,6 +32,7 @@
           id="menuButton"
           aria-label="Åbn menu"
           aria-expanded="false"
+          aria-controls="navLinks"
         >
           ☰
         </button>
@@ -42,6 +47,7 @@
     </header>
 
     <main>
+      <!-- Hero -->
       <section class="hero" id="forside">
         <div class="container hero-content">
           <div class="hero-text-content">
@@ -68,36 +74,48 @@
 
             <div class="hero-buttons">
               <a href="#projekter" class="button">Se mine projekter</a>
-              <a href="#kontakt" class="button button-secondary">Kontakt mig</a>
+
+              <a href="#kontakt" class="button button-secondary">
+                Kontakt mig
+              </a>
             </div>
           </div>
 
           <div class="hero-image">
-            <img src="img/billede-af-mig.jpg" alt="Billede af mig" />
+            <img src="img/billede-af-mig.jpg" alt="Portræt af Katrine Bruhn" />
           </div>
         </div>
       </section>
 
+      <!-- Om mig -->
       <section class="section" id="om-mig">
         <div class="container about">
           <div>
             <p class="small-title">Om mig</p>
+
             <h2>Om mig</h2>
 
             <p>
-              Jeg er multimediedesignstuderende med stor interesse for frontend,
-              webdesign og UI/UX. Jeg kan godt lide at kombinere det visuelle
-              med det tekniske og omsætte idéer og designs til simple,
-              responsive websites. Jeg arbejder især med HTML, CSS og JavaScript
-              og synes, det er spændende at se et design udvikle sig fra idé til
-              færdig løsning. Som person er jeg nysgerrig, kreativ og
-              detaljeorienteret. Jeg trives med at lære nye ting og fordybe mig
-              i det, jeg arbejder med.
+              Jeg kan især godt lide den del af webudvikling, hvor design bliver
+              omsat til en fungerende hjemmeside. Jeg går op i at skabe enkle,
+              responsive løsninger, hvor både det visuelle udtryk og
+              brugeroplevelsen fungerer. <br />
+              <br />
+              Når jeg arbejder med et projekt, er jeg detaljeorienteret og
+              nysgerrig og bruger gerne tid på at finde den løsning, der
+              fungerer bedst. Jeg vil gerne udvikle mig endnu mere inden for
+              frontend og lære, hvordan man arbejder med webudvikling i praksis
+              som en del af et team. <br />
+              <br />
+              Som person er jeg nysgerrig, kreativ og detaljeorienteret. Jeg
+              trives med at lære nye ting og fordybe mig i det, jeg arbejder
+              med.
             </p>
           </div>
 
           <div class="skills">
             <h3>Kompetencer</h3>
+
             <div class="skill-list">
               <span>HTML</span>
               <span>CSS</span>
@@ -113,9 +131,11 @@
         </div>
       </section>
 
+      <!-- Projekter -->
       <section class="section projects-section" id="projekter">
         <div class="container">
           <p class="small-title">Projekter</p>
+
           <h2>Udvalgte projekter</h2>
 
           <div class="projects-grid">
@@ -124,16 +144,24 @@
               <div class="project-image">
                 <img
                   src="img/gutguide.png"
-                  alt="Forsiden af GutGuide projektet"
+                  alt="Forsiden af GutGuide-projektet"
                 />
               </div>
 
               <div class="project-content">
                 <h3>GutGuide</h3>
 
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                  <span>Figma</span>
+                </div>
+
                 <p>
-                  En digital læringsplatform om gut health med artikler,
-                  opskrifter og en interaktiv quiz.
+                  Digital læringsplatform udviklet som eksamensprojekt. Jeg
+                  arbejdede blandt andet med frontend, responsivt design og
+                  implementering af interaktive elementer.
                 </p>
 
                 <div class="project-links">
@@ -163,18 +191,29 @@
                 </div>
               </div>
             </article>
+
             <!-- Sten, saks, papir -->
             <article class="project-card">
               <div class="project-image">
-                <img src="img/sten-saks-papir.png" alt="Sten, saks, papir" />
+                <img
+                  src="img/sten-saks-papir.png"
+                  alt="Sten, saks, papir-projekt"
+                />
               </div>
 
               <div class="project-content">
                 <h3>Sten, saks, papir</h3>
 
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
                 <p>
-                  Et interaktivt JavaScript-spil med tilfældige computervalg,
-                  animationer og løbende score.
+                  Et interaktivt JavaScript-spil, hvor jeg har arbejdet med
+                  DOM-manipulation, events, tilfældige computervalg, animationer
+                  og løbende score.
                 </p>
 
                 <div class="project-links">
@@ -202,15 +241,23 @@
               <div class="project-image">
                 <img
                   src="img/gaet-et-tal-ombyttet.png"
-                  alt="Gæt et tal ombyttet"
+                  alt="Gæt et tal ombyttet-projekt"
                 />
               </div>
+
               <div class="project-content">
                 <h3>Gæt et tal ombyttet</h3>
 
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
                 <p>
-                  Et JavaScript-spil, hvor computeren forsøger at gætte
-                  brugerens tal ved hjælp af logik og brugerinput.
+                  Et JavaScript-spil, hvor computeren forsøger at finde
+                  brugerens valgte tal. Projektet har givet mig erfaring med
+                  funktioner, betingelser, brugerinput og DOM-manipulation.
                 </p>
 
                 <div class="project-links">
@@ -232,14 +279,101 @@
                 </div>
               </div>
             </article>
+
+            <!-- Bar Chart -->
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="img/bar-chart.png"
+                  alt="Bar Chart JavaScript-projekt"
+                />
+              </div>
+
+              <div class="project-content">
+                <h3>Bar Chart</h3>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <p>
+                  En JavaScript-øvelse, hvor tilfældige værdier genereres og
+                  visualiseres dynamisk som søjler. Her arbejdede jeg blandt
+                  andet med arrays, funktioner og løbende opdatering af DOM'en.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="https://katrinebruhn.github.io/exercises/bar_chart_starter_kit/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Se projekt →
+                  </a>
+
+                  <a
+                    href="https://github.com/katrinebruhn/exercises/tree/main/bar_chart_starter_kit"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Se kode →
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Filterøvelse -->
+            <article class="project-card">
+              <div class="project-image">
+                <img src="img/filter-oevelse.png" alt="Filterøvelse-projekt" />
+              </div>
+
+              <div class="project-content">
+                <h3>Filterøvelse</h3>
+
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>CSS</span>
+                  <span>JavaScript</span>
+                </div>
+
+                <p>
+                  En JavaScript-øvelse, hvor indhold filtreres dynamisk ud fra
+                  brugerens valg. Her arbejdede jeg med arrays, filter-metoden,
+                  events og dynamisk indhold.
+                </p>
+
+                <div class="project-links">
+                  <a
+                    href="https://katrinebruhn.github.io/exercises/filter_oevelse_starter_files_table/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Se projekt →
+                  </a>
+
+                  <a
+                    href="https://github.com/katrinebruhn/exercises/tree/main/filter_oevelse_starter_files_table"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Se kode →
+                  </a>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
+      <!-- Kontakt -->
       <section class="section contact-section" id="kontakt">
         <div class="container contact">
           <div>
             <p class="small-title">Kontakt</p>
+
             <h2>Skal vi tage en snak?</h2>
 
             <p>
@@ -249,20 +383,33 @@
           </div>
 
           <div class="contact-links">
-            <a href="mailto:katrinebruhn@icloud.com">katrinebruhn@icloud.com</a>
+            <a href="mailto:katrinebruhn@icloud.com">
+              katrinebruhn@icloud.com
+            </a>
+
             <a
               href="https://www.linkedin.com/in/katrine-bruhn-75b8b0431/"
               target="_blank"
               rel="noopener noreferrer"
-              >LinkedIn</a
             >
+              LinkedIn
+            </a>
+
             <a
               href="https://github.com/katrinebruhn"
               target="_blank"
               rel="noopener noreferrer"
-              >GitHub</a
             >
-            <a href="cv/katrine-bruhn-cv.pdf" target="_blank"> CV </a>
+              GitHub
+            </a>
+
+            <a
+              href="cv/katrine-bruhn-cv.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CV
+            </a>
           </div>
         </div>
       </section>
