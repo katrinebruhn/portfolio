@@ -420,6 +420,7 @@ h3 {
 
   .hero {
     min-height: 70vh;
+    padding-top: 2rem;
     padding-bottom: 2rem;
   }
 
