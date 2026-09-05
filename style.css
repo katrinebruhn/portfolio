@@ -109,7 +109,6 @@ a {
 .hero-image img {
   width: 100%;
   max-width: 380px;
-  margin-bottom: 2rem;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   border-radius: 8px;
@@ -389,6 +388,8 @@ h3 {
 /* Mobil */
 
 @media (max-width: 768px) {
+  /* Navigation */
+
   .menu-button {
     display: block;
     color: var(--text);
@@ -415,6 +416,8 @@ h3 {
     border-bottom: 1px solid var(--line);
   }
 
+  /* Hero */
+
   .hero {
     min-height: 70vh;
     padding-bottom: 2rem;
@@ -425,21 +428,10 @@ h3 {
     gap: 2.5rem;
   }
 
-  .hero-image {
-    justify-content: flex-start;
-  }
-
-  .hero-image img {
-    max-width: 280px;
-    margin-bottom: 0;
-  }
-
-  /* Mindre overskrift på mobil */
   h1 {
     font-size: 2.4rem;
   }
 
-  /* Mindre knapper på mobil */
   .hero-buttons {
     gap: 0.8rem;
   }
@@ -450,28 +442,35 @@ h3 {
     font-size: 0.85rem;
   }
 
-  /* Sørger for at burgermenuen har samme farve som teksten */
-  .menu-button {
-    color: var(--text);
+  .hero-image {
+    justify-content: flex-start;
   }
+
+  .hero-image img {
+    max-width: 280px;
+  }
+
+  /* Sektioner */
 
   .section {
     padding: 4rem 0;
   }
 
-  .about,
-  .contact,
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
+  /* Om mig */
 
-  .about,
-  .contact {
+  .about {
+    grid-template-columns: 1fr;
     gap: 2.5rem;
   }
 
   .skills {
     margin-top: 0;
+  }
+
+  /* Projekter */
+
+  .projects-grid {
+    grid-template-columns: 1fr;
   }
 
   .project-card {
@@ -487,5 +486,12 @@ h3 {
   .project-links {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  /* Kontakt */
+
+  .contact {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
   }
 }
