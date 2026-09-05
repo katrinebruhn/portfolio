@@ -391,6 +391,7 @@ h3 {
 @media (max-width: 768px) {
   .menu-button {
     display: block;
+    color: var(--text);
   }
 
   .nav-links {
@@ -416,6 +417,7 @@ h3 {
 
   .hero {
     min-height: 70vh;
+    padding-bottom: 2rem;
   }
 
   .hero-content {
@@ -430,6 +432,27 @@ h3 {
   .hero-image img {
     max-width: 280px;
     margin-bottom: 0;
+  }
+
+  /* Mindre overskrift på mobil */
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  /* Mindre knapper på mobil */
+  .hero-buttons {
+    gap: 0.8rem;
+  }
+
+  .hero-buttons .button {
+    width: auto;
+    padding: 0.7rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  /* Sørger for at burgermenuen har samme farve som teksten */
+  .menu-button {
+    color: var(--text);
   }
 
   .section {
