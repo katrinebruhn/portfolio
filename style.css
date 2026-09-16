@@ -389,7 +389,6 @@ h3 {
 
 @media (max-width: 768px) {
   /* Navigation */
-
   .menu-button {
     display: block;
     color: var(--text);
